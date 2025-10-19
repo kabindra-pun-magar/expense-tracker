@@ -1,0 +1,73 @@
+/* Simple beginner-friendly styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f8fb;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+h1 { text-align: center; margin-bottom: 10px; }
+.top {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.summary { display: flex; gap: 10px; align-items: center; }
+.card {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  min-width: 120px;
+  text-align: center;
+}
+.label { font-size: 0.85rem; color: #666; }
+.value { font-size: 1.25rem; font-weight: bold; margin-top: 6px; }
+
+.form {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  width: 320px;
+}
+.form label { display:block; margin-top: 8px; font-size: 0.9rem; }
+.form input, .form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+.form button {
+  margin-top: 10px;
+  padding: 10px 12px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.list { margin-top: 12px; }
+.item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  margin-bottom: 8px;
+}
+.item.expense .amount { color: #d9534f; font-weight: bold; }
+.item.income .amount { color: #28a745; font-weight: bold; }
+.item .meta { color: #666; font-size: 0.85rem; }
+.item .desc { color: #444; margin-top: 6px; font-size: 0.9rem; }
+.del {
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  padding: 6px 8px;
+  cursor: pointer;
+}
